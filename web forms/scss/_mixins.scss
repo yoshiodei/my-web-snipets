@@ -1,0 +1,15 @@
+@mixin formMini {
+  height: auto;
+  width: 300px;   
+} 
+
+@mixin square($size){
+  height: $size;
+  width: $size;
+}
+
+
+@mixin formLarge {
+  height: auto;
+  width: 450px;   
+}

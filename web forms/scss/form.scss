@@ -1,0 +1,316 @@
+@import "reset";
+@import "variable";
+@import "mixins";
+
+.form {
+  @include formMini;
+  margin: auto;
+  border-radius: 6px;    
+  box-sizing: border-box;
+  padding: 22px;
+  background-color: $primaryColourForm;    
+  font-family: verdana;    
+  text-align: center; 
+    &_head {
+      font-weight:bold;
+      margin-bottom: 8px;    
+    }
+    &_para {
+      color: lighten(black, 35%);    
+      font-size: 0.7em;
+      margin-bottom: 18px;    
+    }
+    &_input {
+      width:100%;
+      height: 32px; 
+      padding-left: 25px;
+      border: none;
+      outline: none;
+      margin-bottom: 3px;    
+    }
+    &_icon {
+      position: absolute;
+      left: 4px;
+      top: 8px;
+    }
+    &_icon.lc {
+      left: 7px;      
+        }    
+    &_div {
+      position: relative;
+    }
+    &_button {
+      text-decoration: none;
+      color: white;
+      display: inline-block;
+      width: 100%;
+      margin-top: 10px;    
+      background-color: $secondaryColourForm;
+      height: 28px;
+      border-radius: 2px;
+      line-height: 2.3;
+      font-size: 0.8em; 
+      font-weight: bold;
+      letter-spacing: 1px;
+        
+        &:hover {
+          background-color: darken($secondaryColourForm, 4%);
+        }    
+    }
+    
+    &_para_2 {
+      margin-top: 8px;    
+      font-size: 0.75em;
+      color: lighten(black, 50%);    
+    }
+}
+
+.form2 {
+  @include formMini;
+  margin: auto;
+  font-family: verdana;    
+  box-shadow: 0 0 8px 0 lighten(grey, 10%);
+  padding: 25px;    
+    
+    &_head {
+      font-weight: bold;
+      font-size: 1.2em;
+      text-transform: uppercase;
+      color: $primaryColourForm2;   margin-bottom: 10px;   
+    }    
+    &_label {
+    display: block;
+    font-size: 0.7em;
+    font-weight: bold;
+    color: $primaryColourForm2; 
+    letter-spacing: -0.5px;    
+    }
+    &_input {
+      height: 27px;
+      border: none;
+      outline: none;
+      border-bottom: 2px solid $primaryColourForm2;
+      width: 100%;
+      margin-bottom: 20px;    
+    }
+    &_textarea {
+      border: none;
+      outline: none;
+      border-bottom: 2px solid $primaryColourForm2;
+      width: 100%;
+      margin-bottom: 25px;    
+    }
+    &_button {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    font-size: 0.8em;
+    display: inline-block;
+    width: 100%;
+    line-height: 2;
+    text-align: center;
+    letter-spacing: 0.5px;    
+    background-color: $primaryColourForm2;  
+        
+        &:hover {
+          background-color: darken($primaryColourForm2, 5%);
+        }    
+    }
+}
+
+.form3 {
+@include formMini; 
+background-color: $bgColourForm3;
+opacity: .7;    
+color: $secondaryColourForm3;
+padding: 20px;
+box-sizing:border-box;
+border-radius: 4px;
+font-family: verdana;  
+margin: auto;    
+    &_head {
+      text-align: center;
+      margin: 7px 0 12px;      
+    }
+    &_label {
+      display: block;
+      font-size: 0.7em;
+      color: $primaryColourForm3;   
+    }
+    &_input {
+      width: 100%;
+      height: 25px; 
+      margin-bottom: 8px;
+      background-color: transparent;
+      color: $secondaryColourForm3;
+      outline: none;
+      border: none;    
+      border-bottom: 1.5px solid $primaryColourForm3;
+      padding-left: 1px;    
+    }
+    &_btn {
+      text-decoration: none;
+      color: $secondaryColourForm3;
+      background-color: $primaryColourForm3;
+      display: inline-block;
+      font-size: 0.7em;
+      text-align: center;
+      width: 70px;
+      border-radius: 3px;
+      line-height: 2.5;
+      margin-top: 10px;    
+      height: 30px;    
+    }    
+}
+
+.form4 {
+  @include formMini;
+  margin: auto;
+  background-color: grey;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  font-family: verdana;    
+    &_head {
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    font-size: 1.2em;
+    text-transform: uppercase;    
+    font-weight: 500;
+    line-height: 2.8;
+    background-color: #61c772;     
+    } 
+    &_wrap {
+      padding: 20px;
+    }
+    &_input {
+    width: 100%;
+    border:none;
+    outline: none;
+    border-bottom: 1px solid white;    
+    background: transparent;
+    color: white;    
+    padding: 0 0 8px 25px;
+    margin-top: 15px;     
+    }
+    &_input::placeholder {
+    color:white;
+    font-family: verdana;    
+    }
+    &_box {
+    position: relative;
+    }
+    &_icon {
+    color: white;    
+    position: absolute;
+    top: 15px;
+    left: 0px;    
+    }
+    &_div {
+    margin-top: 20px;
+    margin-bottom: 30px;    
+    display: flex;
+    }
+    &_reme{
+    font-size: 0.7em;
+    color: darken(white, 25%);     
+    }
+    &_chbox {
+    margin: 0 4px 0 0; 
+    border: none;
+    outline: none;
+    @include square(14px);      
+    }
+    &_fpwd {
+    font-size: 0.7em;
+    margin-left: auto; 
+    text-decoration: none;
+    color: darken(white, 25%);    
+    }
+    &_button {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight:600;    
+    color: white;
+    height: 30px;
+    width: 140px;    
+    background-color: #61c772;     
+    margin: auto;
+    border-radius: 50px;
+    display: block;
+    font-size: 0.7em; 
+    text-align: center;
+    line-height: 2.5;  
+    margin-bottom: 15px;    
+    }
+}
+
+.form5 {   
+  @include formLarge;
+  margin: auto;
+  background-color: white;
+  font-family: verdana;
+  border-radius: 6px; 
+  box-shadow: 0 0 8px 0 dimgrey;    
+    &_btn_div {
+      display: flex;
+    }
+    &_btn1 {
+      font-weight:900;    
+      display: inline-block;
+      flex: 1;
+      background-color: orangered;     
+      text-decoration: none;
+      text-align: center;
+      border-top-left-radius: 6px;
+      padding: 10px; 
+      font-size: 0.95em;
+      color: white;     
+    } 
+    &_btn2 {
+    @extend .form5_btn1;
+    border-top-left-radius: 0;
+    border-top-right-radius: 6px; 
+    background-color: dimgrey;
+    }
+    &_box {
+    padding: 20px 50px 30px;    
+    }
+    &_label {
+    font-size: 0.82em;
+    font-weight: bold; 
+    color: orangered;    
+    }
+    &_btn {
+    background-color: orangered;
+    color: white; 
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 3px;
+    font-weight: 700;  
+    margin-top: 25px; 
+        &:hover  {
+          background-color: darken(orangered,5%);
+        }  
+    }
+    &_input {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1.5px solid orangered;    
+    height: 20px;
+    width:100%;
+    padding: 15px 0;  
+    margin-bottom: 15px;    
+        &::placeholder {
+        color: black;
+        }    
+    }
+}
