@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> Web Cards </title>
+    <link rel="stylesheet" type="text/css" href="css/card2.css">
+    <link rel="stylesheet" type="text/css" href="css/card3.css">   
+    <style>
+        html{
+          background-color:crimson;
+        }
+        
+        h1{
+          text-align: center;
+          text-decoration: underline;    
+        } 
+        
+        .card{ 
+          display: flex;    
+          height: 300px;
+          width: 520px;
+          background-color: aquamarine;
+          margin: auto;    
+        }
+          
+        .card_desc{
+          background-color:lightblue;     
+          box-sizing: border-box;
+          display: inline-block;
+          height: 100%;
+          width: 50%;  
+          padding: 20px;
+          position: relative;    
+        }
+        
+        .card_desc:after{
+          content: "";
+          display: block;
+          width: 0px;
+          height: 0px; 
+          border-left: 20px solid lightblue;
+          border-right: 20px solid transparent;
+          border-bottom: 20px solid transparent; 
+          border-top: 25px solid transparent;
+          position: absolute;    
+          right: -40px;
+          top: 40px;
+        }
+        
+        .card_img{
+          background-image: url(images/images.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;    
+          background-color: red;
+          display: inline-block;
+          height: 100%;
+          width: 50%;     
+        }
+        
+        .card_desc_para{
+          font-size: 0.8em;
+          font-family: cursive;
+          line-height: 1.5;
+          margin-bottom: 0;
+          font-weight: 400;      
+        }
+        
+        .card_desc_head{
+          font-family: verdana;
+          text-transform: uppercase;
+          margin: 0 auto 15px;
+              
+        }
+        
+        .card_btn{
+          display: block;
+          height: 50px;
+          width: 50px;
+          background-color:blueviolet;
+          color: black;
+          font-family: cursive;
+          border-radius: 50px;
+          text-decoration: none;
+          position: absolute;
+          left: 20px;
+          bottom: 20px; 
+          font-size: 0.9em; 
+          text-align: center;
+          line-height: 3.2;    
+        }
+        
+        
+    </style>  
+  </head>
+  <body>
+    <h1>Web Cards</h1>
+    <br><br>
+      
+      
+    <div class="card">
+      <div class="card_desc">
+        <p class="card_desc_para">Web Card</p>
+        <h3 class="card_desc_head">Project: Supercar</h3>
+        <p class="card_desc_para">A fresh, responsive mobile &amp; table site that showcases the U.S. Air Force Project. Supercar with an app-like design and user experience.</p>  
+          
+      <a class="card_btn" href="#">View</a>   
+    
+      </div> 
+      <div class="card_img">
+          
+      </div>     
+    </div>
+      
+    <br><br><br><br>
+      
+    <div class="card2">
+      <div class="card2_img"></div>
+      <div class="card2_desc">
+      <p class="card2_desc_para">1058W Catalpa &#35;3E</p> 
+      <p class="card2_desc_para">Chicago, IL 60640</p>      
+      </div>
+      <div class="card2_data">
+        <div class="card2_data_div">
+          <p class="card2_data_para">1</p>
+          <p class="card2_data_para">bed</p>    
+        </div>   
+        <div class="card2_data_div">
+          <p class="card2_data_para">1</p>
+          <p class="card2_data_para">bath</p>    
+        </div>
+        <div class="card2_data_div card2_data_div--mod" >
+          <p class="card2_data_para">800</p>
+          <p class="card2_data_para">sq feet</p>   
+        </div>    
+      </div>
+        <a href="#" class="card2_btn">View Property</a>
+      </div>  
+      
+      <br><br><br><br>
+      
+      
+      <div class="card3">
+        <div class="card3_left">
+          <div class="card3_left_img"></div>
+          <div class="card3_left_data">
+            <p class="card3_left_data_para">choose size</p>
+            <a href="#" class="card3_left_data_btn">5</a>
+            <a href="#" class="card3_left_data_btn">6</a>
+            <a href="#" class="card3_left_data_btn">7</a>
+            <a href="#" class="card3_left_data_btn">8</a>
+            <a href="#" class="card3_left_data_btn">9</a>
+            <a href="#" class="card3_left_data_btn">10</a>
+            <a href="#" class="card3_left_data_btn">11</a>
+            <a href="#" class="card3_left_data_btn">12</a>     
+          </div>    
+        </div>
+        <div class="card3_right">
+          <p class="card3_right_para">women's running shoe</p>
+          <h2 class="card3_right_head"> Nike Epic React Flyknit</h2> 
+          <h2 class="card3_right_price">$150</h2>
+          <p class="card3_right_info">The Nike Epic React Flyknit foam cushioning is responsive yet light-weight, durable yet soft. This creates a sensation that not only enhances the feeling of mving forward,but makes running feel fun too.</p>
+          <div class="card3_right_button">
+            <div class="card3_right_button_1">Add to cart
+            </div>
+            <div class="card3_right_button_2"></div>      
+          </div>   
+        </div>  
+      </div>
+      
+      <br><br><br>
+      
+      
+      <div class="card4">
+        <div class="card4_top">
+          <div class="card4_top_img">
+          </div>
+          <div class="card4_top_info">
+            <p class="card4_top_info_para">few seconds</p>        
+          </div>    
+        </div>  
+        <div class="card4_bottom">
+          <p class="card4_bottom_para">
+            Stripe Inc.      
+          </p>
+          <h3 class="card4_bottom_head">  Stripe Amex Express Checkout
+              
+          </h3>  
+          <p class="card4_bottom_info">Stripe + Amex Express Checkout
+          </p>
+        </div>  
+      </div>
+      <br><br><br><br><br>
+      
+      <div class="card5">
+        <div class="card5_img_cont">        <div class="card5_img"></div>
+        </div>    
+          <h5 class="card5_head"> Freelancers &amp; Contracters</h5>
+          <p class="card5_para">Regard has you covered between and during your contracts, through downtimes,or while you're busy finding your next job.</p>  
+      </div>
+      
+      <br><br><br><br><br>
+      
+      <div class="card6">
+        <div class="card6_img">
+          <p class="card6_img_para1">photos</p>  
+          <p class="card6_img_para2">27 Mar</p>     
+        </div> 
+        <h4 class="card6_head"> City Light in New York</h4>
+        <p class="card6_para">
+        The city that never sleeps.  
+        </p> 
+        <p class="card6_para2">Comments</p>  
+      </div>
+      
+  </body>    
+</html>
